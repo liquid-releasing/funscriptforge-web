@@ -32,6 +32,7 @@ Download buttons point to the public releases repo:
 ```
 https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-windows.zip
 https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-macos.zip
+https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-linux.tar.gz
 ```
 
 Using `/releases/latest/download/` means the links always resolve to the newest release — no manual update needed when a new version ships.
