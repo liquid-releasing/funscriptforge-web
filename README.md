@@ -30,8 +30,8 @@ Custom domain: `funscriptforge.com` → DNS managed via Cloudflare.
 Download buttons point to the public releases repo:
 
 ```
-https://github.com/liquid-releasing/funscript-forge-releases/releases/latest/download/FunscriptForge-windows.zip
-https://github.com/liquid-releasing/funscript-forge-releases/releases/latest/download/FunscriptForge-macos.zip
+https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-windows.zip
+https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-macos.zip
 ```
 
 Using `/releases/latest/download/` means the links always resolve to the newest release — no manual update needed when a new version ships.
@@ -40,8 +40,8 @@ Using `/releases/latest/download/` means the links always resolve to the newest 
 
 | Repo | Purpose |
 | --- | --- |
-| [`liquid-releasing/funscript-forge`](https://github.com/liquid-releasing/funscript-forge) | App source code (private) |
-| [`liquid-releasing/funscript-forge-releases`](https://github.com/liquid-releasing/funscript-forge-releases) | Public release artifacts (Windows + macOS zips) |
+| [`liquid-releasing/funscriptforge`](https://github.com/liquid-releasing/funscriptforge) | App source code (private) |
+| [`liquid-releasing/funscriptforge-releases`](https://github.com/liquid-releasing/funscriptforge-releases) | Public release artifacts (Windows + macOS + Linux) |
 
 ---
 
