@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FunscriptForge — Structure-aware funscript post-processor</title>
-  <meta name="description" content="FunscriptForge analyzes, transforms, and refines funscripts with structural analysis, per-phrase editing, live preview, and one-click export. Free download for Windows and macOS." />
+  <meta name="description" content="FunscriptForge analyzes, transforms, and refines funscripts with structural analysis, per-phrase editing, live preview, and one-click export. Free download for Windows." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -298,7 +298,7 @@
 
   <div class="dl-buttons">
     <a class="btn btn-primary"
-       href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-windows.zip"
+       href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-Setup-windows.exe"
        download>
       <!-- Windows icon -->
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -307,26 +307,18 @@
       Download for Windows
     </a>
     <a class="btn btn-secondary"
-       href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-macos.zip"
+       href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-Setup-windows.msi"
        download>
-      <!-- Apple icon -->
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+      <!-- Package icon -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
       </svg>
-      Download for macOS
-    </a>
-    <a class="btn btn-secondary"
-       href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-linux.tar.gz"
-       download>
-      <!-- Terminal icon -->
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M20 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H4V7h16v12zm-9 2v-2h2v2h-2zM5.5 11.5l1.41-1.42L10 13.17l-3.09 3.09L5.5 14.84 7.67 12.5 5.5 11.5zm5.5 4h5v-2h-5v2z"/>
-      </svg>
-      Download for Linux
+      MSI installer
     </a>
   </div>
   <p class="version-note">
-    v0.0.11 &nbsp;·&nbsp; Free &nbsp;·&nbsp; No Python required &nbsp;·&nbsp;
+    v0.2.0-alpha &nbsp;·&nbsp; Windows &nbsp;·&nbsp; Free &nbsp;·&nbsp; No Python required &nbsp;·&nbsp;
     <a href="https://github.com/liquid-releasing/funscriptforge" style="color:var(--muted);">Open source</a>
   </p>
   <p class="version-note" style="margin-top:0.5rem;">
@@ -418,7 +410,7 @@
       <tr><th></th><th>Minimum</th><th>Recommended</th></tr>
     </thead>
     <tbody>
-      <tr><td><strong>OS</strong></td><td>Windows 10 (64-bit) · macOS 10.15 Catalina · Linux x86-64</td><td>Windows 10/11 · macOS 12+ · Ubuntu 24.04 LTS</td></tr>
+      <tr><td><strong>OS</strong></td><td>Windows 10 (64-bit)</td><td>Windows 11</td></tr>
       <tr><td><strong>RAM</strong></td><td>4 GB</td><td>8 GB or more</td></tr>
       <tr><td><strong>Display</strong></td><td>1920 × 1080</td><td>2560 × 1440 QHD</td></tr>
       <tr><td><strong>Browser</strong></td><td>Any modern browser</td><td>Chrome or Edge</td></tr>
@@ -459,21 +451,6 @@
 
     <div class="tool-card">
       <div class="tool-card-header">
-        <img src="forgegen-hero.png" alt="forgegen" />
-        <div>
-          <h3>forgegen</h3>
-          <p>Audio to funscript in seconds, not hours. Phrase-level mode shaping (tease, edging, break, steady) with a clean handoff into FunscriptForge — every save writes an <code>analysis.json</code> sidecar FunscriptForge auto-loads. Local, no account, no cloud.</p>
-        </div>
-      </div>
-      <div class="tool-dl">
-        <a href="https://forgegen.app" target="_blank" rel="noopener">
-          Visit forgegen.app →
-        </a>
-      </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tool-card-header">
         <img src="forgeassembler-logo.png" alt="ForgeAssembler" />
         <div>
           <h3>ForgeAssembler</h3>
@@ -508,10 +485,10 @@
 <div class="cta-bar">
   <section class="section">
     <h2 class="section-title">Ready to get started?</h2>
-    <p>Download the latest release, extract, and run. No install wizard, no registry entries.</p>
+    <p>Download the installer and run it. Windows only for now — macOS and Linux builds aren't ready yet.</p>
     <div class="dl-buttons">
       <a class="btn btn-primary"
-         href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-windows.zip"
+         href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-Setup-windows.exe"
          download>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
@@ -519,20 +496,13 @@
         Download for Windows
       </a>
       <a class="btn btn-secondary"
-         href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-macos.zip"
+         href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-Setup-windows.msi"
          download>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
         </svg>
-        Download for macOS
-      </a>
-      <a class="btn btn-secondary"
-         href="https://github.com/liquid-releasing/funscriptforge-releases/releases/latest/download/FunscriptForge-linux.tar.gz"
-         download>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M20 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H4V7h16v12zm-9 2v-2h2v2h-2zM5.5 11.5l1.41-1.42L10 13.17l-3.09 3.09L5.5 14.84 7.67 12.5 5.5 11.5zm5.5 4h5v-2h-5v2z"/>
-        </svg>
-        Download for Linux
+        MSI installer
       </a>
     </div>
     <p class="version-note" style="margin-top:1rem;">
